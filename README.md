@@ -49,3 +49,13 @@ Run migrations to initialize the database:
     php yii migrate --migrationPath=@yii/rbac/migrations
 
     php yii rbac/init
+
+# Brewber deployment steps
+
+Navigate to your local brewber project folder
+
+    git remote add production ssh://brewber-app1/var/repo/brewber.git
+
+When you want to deploy to production:
+
+    git push production master
