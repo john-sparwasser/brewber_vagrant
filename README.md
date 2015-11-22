@@ -52,6 +52,13 @@ Run migrations to initialize the database:
 
 # Brewber deployment steps
 
+Add these lines to your ~/.ssh/config file if they aren't already there:
+
+    Host brewber-app1
+    Hostname 54.84.152.118
+    user ubuntu
+    IdentityFile ~/.ssh/brewber_production.pem
+
 Navigate to your local brewber project folder
 
     git remote add production ssh://brewber-app1/var/repo/brewber.git
